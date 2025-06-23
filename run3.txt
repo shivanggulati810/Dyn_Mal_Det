@@ -1,0 +1,623 @@
+sg@sg:~/Desktop/Dyn_An$ python3 run_malware_qiling.py 
+[+]     Profile: default
+[+]     Set kernel trap: memory_barrier at 0xffff0fa0
+[+]     Set kernel trap: cmpxchg at 0xffff0fc0
+[+]     Set kernel trap: get_tls at 0xffff0fe0
+[+]     Mapped 0x8000-0x14000
+[+]     Mapped 0x1c000-0x1d000
+[+]     mem_start : 0x8000
+[+]     mem_end   : 0x1d000
+[+]     Interpreter path: /lib/ld-uClibc.so.0
+[+]     Interpreter addr: 0x47ba000
+[+]     Mapped 0x47ba000-0x47db000
+[+]     Mapped 0x47ea000-0x47ec000
+[+]     mmap_address is : 0x90000000
+[+]     rel name b'ioctl'
+[+]     rel name b'recv'
+[+]     rel name b'connect'
+[+]     rel name b'sigemptyset'
+[+]     rel name b'memmove'
+[+]     rel name b'snprintf'
+[+]     rel name b'usleep'
+[+]     rel name b'getpid'
+[+]     rel name b'fgets'
+[+]     rel name b'memcpy'
+[+]     rel name b'system'
+[+]     rel name b'malloc'
+[+]     rel name b'sleep'
+[+]     rel name b'recvfrom'
+[+]     rel name b'socket'
+[+]     rel name b'select'
+[+]     rel name b'readdir'
+[+]     rel name b'sigaddset'
+[+]     rel name b'send'
+[+]     rel name b'abort'
+[+]     rel name b'chmod'
+[+]     rel name b'accept'
+[+]     rel name b'calloc'
+[+]     rel name b'write'
+[+]     rel name b'kill'
+[+]     rel name b'bind'
+[+]     rel name b'inet_addr'
+[+]     rel name b'setsockopt'
+[+]     rel name b'wait'
+[+]     rel name b'rand'
+[+]     rel name b'signal'
+[+]     rel name b'strncmp'
+[+]     rel name b'sendto'
+[+]     rel name b'realloc'
+[+]     rel name b'listen'
+[+]     rel name b'fork'
+[+]     rel name b'sscanf'
+[+]     rel name b'execv'
+[+]     rel name b'__uClibc_main'
+[+]     rel name b'fopen'
+[+]     rel name b'memset'
+[+]     rel name b'fclose'
+[+]     rel name b'getppid'
+[+]     rel name b'time'
+[+]     rel name b'opendir'
+[+]     rel name b'strcmp'
+[+]     rel name b'getsockopt'
+[+]     rel name b'access'
+[+]     rel name b'__errno_location'
+[+]     rel name b'exit'
+[+]     rel name b'atoi'
+[+]     rel name b'open'
+[+]     rel name b'clock'
+[+]     rel name b'setsid'
+[+]     rel name b'closedir'
+[+]     rel name b'fcntl'
+[+]     rel name b'close'
+[+]     rel name b'free'
+[+]     rel name b'sigprocmask'
+[+]     rel name b'getsockname'
+[INFO] Starting emulation of e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf
+[+]     Received interrupt: 0x2
+[+]     0x047d3548: brk(inp = 0x0) = 0x1f000
+[+]     Received interrupt: 0x2
+[+]     0x047d479c: uname(buf = 0x7ff3ca88) = 0x0
+[+]     Received interrupt: 0x2
+[+]     access("/etc/ld.so.nohwcap", 00) = -1
+[+]     0x047d45ac: access(path = 0x47d8f64, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     0x047d46bc: mmap2(addr = 0x0, length = 0x3000, prot = 0x3, flags = 0x22, fd = 0xffffffff, pgoffset = 0x0) = 0x90000000
+[+]     Received interrupt: 0x2
+[+]     access("/etc/ld.so.preload", 04) = -1
+[+]     0x047d45ac: access(path = 0x47d7fb8, mode = 0x4) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/etc/ld.so.cache", 0x80000, 01) = -1
+[+]     0x047d44ac: open(filename = 0x47d9df0, flags = 0x80000, mode = 0x1) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/tls/i686/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/tls/i686/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/tls/i686/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/tls/i686/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/tls/i686/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/tls/i686/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/tls/i686/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/tls/i686", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/tls/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/tls/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/tls/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/tls/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/tls/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/tls/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/tls/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/tls", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/i686/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/i686/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/i686/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/i686/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/i686/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/i686/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/i686/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/i686", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/arm-linux-gnueabihf/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/arm-linux-gnueabihf", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/tls/i686/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/tls/i686/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/tls/i686/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/tls/i686/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/tls/i686/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/tls/i686/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/tls/i686/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/tls/i686", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/tls/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/tls/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/tls/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/tls/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/tls/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/tls/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/tls/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/tls", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/i686/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/i686/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/i686/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/i686/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/i686/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/i686/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/i686/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/i686", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/arm-linux-gnueabihf/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/arm-linux-gnueabihf", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/tls/i686/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/tls/i686/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/tls/i686/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/tls/i686/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/tls/i686/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/tls/i686/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/tls/i686/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/tls/i686", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/tls/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/tls/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/tls/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/tls/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/tls/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/tls/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/tls/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/tls", 0x7ff3c6b0) write completed
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = 0x0
+[+]     Received interrupt: 0x2
+[+]     open("/lib/i686/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/i686/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/i686/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/i686/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/i686/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/i686/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/i686/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/i686", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/lib/libc.so.0", 0x80000, 0437534540) = 3
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = 0x3
+[+]     Received interrupt: 0x2
+[+]     read() CONTENT: b'\x7fELF\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00(\x00\x01\x00\x00\x00\x90I\x01\x004\x00\x00\x00\xa8f\x06\x00\x02\x00\x00\x054\x00 \x00\x08\x00(\x00\x1a\x00\x19\x00\x01\x00\x00p\x88N\x06\x00\x88N\x06\x00\x88N\x06\x008\x00\x00\x008\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x06\x00\x00\x004\x00\x00\x004\x00\x00\x004\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x05\x00\x00\x00\x04\x00\x00\x00\x03\x00\x00\x00\\N\x06\x00\\N\x06\x00\\N\x06\x00\x14\x00\x00\x00\x14\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xc0N\x06\x00\xc0N\x06\x00\x05\x00\x00\x00\x00\x80\x00\x00\x01\x00\x00\x00\xa4Q\x06\x00\xa4\xd1\x06\x00\xa4\xd1\x06\x00\xd0\x11\x00\x00,d\x00\x00\x06\x00\x00\x00\x00\x80\x00\x00\x02\x00\x00\x00@T\x06\x00@\xd4\x06\x00@\xd4\x06\x00\xb8\x00\x00\x00\xb8\x00\x00\x00\x06\x00\x00\x00\x04\x00\x00\x00Q\xe5td\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x04\x00\x00\x00R\xe5td\xa4Q\x06\x00\xa4\xd1\x06\x00\xa4\xd1\x06\x00\\\x0e\x00\x00\\\x0e\x00\x00\x04\x00\x00\x00\x01\x00\x00\x00\x05\x08\x00\x009\x08\x00\x00\xf6\x03\x00\x00\xeb\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xf8\x03\x00\x00T\x04\x00\x00\x00\x00\x00\x00\x1a\x07\x00\x00\x00\x00\x00\x00&\x05\x00\x00\xc0\x06\x00\x00\x87\x00\x00\x00\xdb\x04\x00\x00\xb5\x07\x00\x00\xcd\x07\x00\x00\x00\x00\x00\x00\x0f\x03\x00\x00\xde\x00\x00\x00L\x03\x00\x00\\\x04\x00\x006\x04\x00\x00\x91\x06\x00\x00\x00\x00\x00\x00\x84\x06\x00\x00\xe7\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x8f\x01\x00\x00\x82\x06\x00\x00\x00\x00\x00\x00\xd1\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00T\x07\x00\x00a\x05\x00\x00\xaf\x06\x00\x00\x00\x00\x00\x00[\x03\x00\x00\xcf\x04\x00\x00\xcd\x04\x00\x00\x00\x00\x00\x00\x86\x01\x00\x00\x8d\x04\x00\x00\xc3\x03\x00\x00\r\x08\x00\x00V\x04\x00\x00\x00\x00\x00\x00'
+[+]     0x047d44ec: read(fd = 0x3, buf = 0x7ff3c788, length = 0x200) = 0x200
+[+]     Received interrupt: 0x2
+[+]     lseek(3, 0x666a8, 0) = 419496
+[+]     0x047d456c: lseek(fd = 0x3, offset = 0x666a8, origin = 0x0) = 0x666a8
+[+]     Received interrupt: 0x2
+[+]     read() CONTENT: b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0b\x00\x00\x00\x05\x00\x00\x00\x02\x00\x00\x004\x01\x00\x004\x01\x00\x00\x00A\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x11\x00\x00\x00\x0b\x00\x00\x00\x02\x00\x00\x004B\x00\x004B\x00\x00\x90\x83\x00\x00\x03\x00\x00\x00\x03\x00\x00\x00\x04\x00\x00\x00\x10\x00\x00\x00\x19\x00\x00\x00\x03\x00\x00\x00\x02\x00\x00\x00\xc4\xc5\x00\x00\xc4\xc5\x00\x00\xfdK\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00!\x00\x00\x00\t\x00\x00\x00\x02\x00\x00\x00\xc4\x11\x01\x00\xc4\x11\x01\x00p\t\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00*\x00\x00\x00\t\x00\x00\x00\x02\x00\x00\x004\x1b\x01\x004\x1b\x01\x00\x80\x12\x00\x00\x02\x00\x00\x00\x06\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00.\x00\x00\x00\x01\x00\x00\x00\x06\x00\x00\x00\xb4-\x01\x00\xb4-\x01\x00\xd4\x1b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x003\x00\x00\x00\x01\x00\x00\x00\x06\x00\x00\x00\x90I\x01\x00\x90I\x01\x00to\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x10\x00\x00\x00\x00\x00\x00\x009\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x08\xb9\x05\x00\x08\xb9\x05\x00Q\x95\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x00\x00\x00\x00A\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\\N\x06\x00\\N\x06\x00\x14\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00I\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00pN\x06\x00pN\x06\x00\x18\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00T\x00\x00\x00\x01\x00\x00p\x82\x00\x00\x00\x88N\x06\x00\x88N\x06\x008\x00\x00\x00\x07\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00_\x00\x00\x00\x01\x00\x00\x00\x03\x00\x00\x00\xa4\xd1\x06\x00\xa4Q\x06\x00\x9c\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00l\x00\x00\x00\x06\x00\x00\x00\x03\x00\x00\x00@\xd4\x06\x00@T\x06\x00\xb8\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00u\x00\x00\x00\x01\x00\x00\x00\x03\x00\x00\x00\xf8\xd4\x06\x00\xf8T\x06\x00\x08\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00z\x00\x00\x00\x01\x00\x00\x00\x03\x00\x00\x00\x00\xe0\x06\x00\x00`\x06\x00t\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x80\x00\x00\x00\x08\x00\x00\x00\x03\x00\x00\x00x\xe3\x06\x00tc\x06\x00XR\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x00\x00\x00\x00\x85\x00\x00\x00\x01\x00\x00\x000\x00\x00\x00\x00\x00\x00\x00tc\x06\x00\x1f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x8e\x00\x00\x00\x03\x00\x00p\x00\x00\x00\x00\x00\x00\x00\x00\x93c\x06\x00-\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x9e\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xc0c\x06\x00<\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\xb1\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xfcc\x06\x00<\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\xc3\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x008d\x06\x008\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\xd7\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00pd\x06\x00\xa8\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\xef\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x18e\x06\x00<\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x07\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00Te\x06\x008\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x8ce\x06\x00\x1b\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00'
+[+]     0x047d44ec: read(fd = 0x3, buf = 0x7ff3c140, length = 0x410) = 0x410
+[+]     Received interrupt: 0x2
+[+]     lseek(3, 0x66393, 0) = 418707
+[+]     0x047d456c: lseek(fd = 0x3, offset = 0x66393, origin = 0x0) = 0x66393
+[+]     Received interrupt: 0x2
+[+]     read() CONTENT: b'A,\x00\x00\x00aeabi\x00\x01"\x00\x00\x00\x057-A\x00\x06\n\x07A\x08\x01\t\x02\x12\x04\x14\x01\x15\x01\x17\x03\x18\x01\x1a\x02\x1e\x04,\x01'
+[+]     0x047d44ec: read(fd = 0x3, buf = 0x7ff3c108, length = 0x2d) = 0x2d
+[+]     Received interrupt: 0x2
+[+]     close(3) = 0
+[+]     0x047d466c: close(fd = 0x3) = 0x0
+[+]     Received interrupt: 0x2
+[+]     stat64("/lib", 0x7ff3c6b0) write completed
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = 0x0
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/tls/i686/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/tls/i686/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/tls/i686/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/tls/i686/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/tls/i686/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/tls/i686/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/tls/i686/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/tls/i686", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/tls/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/tls/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/tls/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/tls/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/tls/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/tls/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/tls/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/tls", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/i686/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/i686/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/i686/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/i686/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/i686/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/i686/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/i686/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/i686", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/neon/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/neon/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/neon/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/neon", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/vfp/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib/vfp", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     open("/usr/lib/libc.so.0", 0x80000, 0437534540) = -1
+[+]     0x047d44ac: open(filename = 0x7ff3c618, flags = 0x80000, mode = 0x47eb960) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     stat64("/usr/lib", 0x7ff3c6b0) read/write fail
+[+]     0x047d43dc: stat64(path = 0x7ff3c618, buf_ptr = 0x7ff3c6b0) = -0x2 (ENOENT)
+[+]     Received interrupt: 0x2
+[+]     writev() CONTENT:
+[+]     b'e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf'
+e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf[+]         b': '
+: [+]   b'error while loading shared libraries'
+error while loading shared libraries[+]         b': '
+: [+]   b'libc.so.0'
+libc.so.0[+]    b': '
+: [+]   b'cannot open shared object file'
+cannot open shared object file[+]       b': '
+: [+]   b'No such file or directory'
+No such file or directory[+]    b'\n'
+
+[+]     0x047cb96c: writev(fd = 0x2, vec = 0x7ff3c4e0, vlen = 0xa) = 0xb1
+[+]     Received interrupt: 0x2
+[+]     0x047d47d4: exit_group(code = 0x7f) = ?
+[x]     CPU Context:
+[x]     r0      : 0xfde0
+[x]     r1      : 0x2
+[x]     r2      : 0x7ff3c720
+[x]     r3      : 0x8ce0
+[x]     r4      : 0x7ff3cfb8
+[x]     r5      : 0x7ff3cb48
+[x]     r6      : 0x47d9048
+[x]     r7      : 0xf8
+[x]     r8      : 0x7ff3cb60
+[x]     r9      : 0x47d89bc
+[x]     r10     : 0x47eb960
+[x]     r11     : 0x0
+[x]     r12     : 0x1c150
+[x]     sp      : 0x7ff3c710
+[x]     lr      : 0x1c0b4
+[x]     pc      : 0x0
+[x]     cpsr    : 0x600001d3
+[x]     c1_c0_2 : 0xf00000
+[x]     c13_c0_3        : 0x0
+[x]     fpexc   : 0x40000000
+[x]     d0      : 0x0
+[x]     d1      : 0x0
+[x]     d2      : 0x0
+[x]     d3      : 0x0
+[x]     d4      : 0x0
+[x]     d5      : 0x0
+[x]     d6      : 0x0
+[x]     d7      : 0x0
+[x]     d8      : 0x0
+[x]     d9      : 0x0
+[x]     d10     : 0x0
+[x]     d11     : 0x0
+[x]     d12     : 0x0
+[x]     d13     : 0x0
+[x]     d14     : 0x0
+[x]     d15     : 0x0
+[x]     d16     : 0x0
+[x]     d17     : 0x0
+[x]     d18     : 0x0
+[x]     d19     : 0x0
+[x]     d20     : 0x0
+[x]     d21     : 0x0
+[x]     d22     : 0x0
+[x]     d23     : 0x0
+[x]     d24     : 0x0
+[x]     d25     : 0x0
+[x]     d26     : 0x0
+[x]     d27     : 0x0
+[x]     d28     : 0x0
+[x]     d29     : 0x0
+[x]     d30     : 0x0
+[x]     d31     : 0x0
+[x]     fpscr   : 0x0
+[x]     q0      : 0x0
+[x]     q1      : 0x0
+[x]     q2      : 0x0
+[x]     q3      : 0x0
+[x]     q4      : 0x0
+[x]     q5      : 0x0
+[x]     q6      : 0x0
+[x]     q7      : 0x0
+[x]     q8      : 0x0
+[x]     q9      : 0x0
+[x]     q10     : 0x0
+[x]     q11     : 0x0
+[x]     q12     : 0x0
+[x]     q13     : 0x0
+[x]     q14     : 0x0
+[x]     q15     : 0x0
+[x]     s0      : 0x0
+[x]     s1      : 0x0
+[x]     s2      : 0x0
+[x]     s3      : 0x0
+[x]     s4      : 0x0
+[x]     s5      : 0x0
+[x]     s6      : 0x0
+[x]     s7      : 0x0
+[x]     s8      : 0x0
+[x]     s9      : 0x0
+[x]     s10     : 0x0
+[x]     s11     : 0x0
+[x]     s12     : 0x0
+[x]     s13     : 0x0
+[x]     s14     : 0x0
+[x]     s15     : 0x0
+[x]     s16     : 0x0
+[x]     s17     : 0x0
+[x]     s18     : 0x0
+[x]     s19     : 0x0
+[x]     s20     : 0x0
+[x]     s21     : 0x0
+[x]     s22     : 0x0
+[x]     s23     : 0x0
+[x]     s24     : 0x0
+[x]     s25     : 0x0
+[x]     s26     : 0x0
+[x]     s27     : 0x0
+[x]     s28     : 0x0
+[x]     s29     : 0x0
+[x]     s30     : 0x0
+[x]     s31     : 0x0
+[x]     PC = 0x00000000 (unreachable)
+
+[x]     Memory map:
+[x]     Start        End          Perm    Label                                                                  Image
+[x]     0000008000 - 0000014000   r-x     e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf   /home/sg/Desktop/Dyn_An/e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf
+[x]     000001c000 - 000001d000   rw-     e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf   /home/sg/Desktop/Dyn_An/e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf
+[x]     000001d000 - 000001f000   rwx     [hook_mem]                                                             
+[x]     00047ba000 - 00047db000   r-x     ld-uClibc.so.0                                                         /home/sg/qiling_rootfs/arm_linux/lib/ld-uClibc.so.0
+[x]     00047ea000 - 00047ec000   rw-     ld-uClibc.so.0                                                         /home/sg/qiling_rootfs/arm_linux/lib/ld-uClibc.so.0
+[x]     007ff0d000 - 007ff3d000   rwx     [stack]                                                                
+[x]     0090000000 - 0090003000   rw-     [mmap anonymous]                                                       
+[x]     00ffff0000 - 00ffff1000   rwx     [arm_traps]                                                            
+[CRASH] Emulation stopped due to error: Invalid memory fetch (UC_ERR_FETCH_UNMAPPED)

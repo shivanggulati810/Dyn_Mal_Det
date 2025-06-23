@@ -1,0 +1,195 @@
+sg@sg:~/Desktop/Dyn_An$ python3 mimic_run_2.py 
+[+] 	Profile: default
+[+] 	Set kernel trap: memory_barrier at 0xffff0fa0
+[+] 	Set kernel trap: cmpxchg at 0xffff0fc0
+[+] 	Set kernel trap: get_tls at 0xffff0fe0
+[+] 	Mapped 0x8000-0x14000
+[+] 	Mapped 0x1c000-0x1d000
+[+] 	mem_start : 0x8000
+[+] 	mem_end   : 0x1d000
+[+] 	Interpreter path: /lib/ld-uClibc.so.0
+[+] 	Interpreter addr: 0x47ba000
+[+] 	Mapped 0x47ba000-0x47bf000
+[+] 	Mapped 0x47c6000-0x47c8000
+[+] 	mmap_address is : 0x90000000
+[+] 	rel name b'ioctl'
+[+] 	rel name b'recv'
+[+] 	rel name b'connect'
+[+] 	rel name b'sigemptyset'
+[+] 	rel name b'memmove'
+[+] 	rel name b'snprintf'
+[+] 	rel name b'usleep'
+[+] 	rel name b'getpid'
+[+] 	rel name b'fgets'
+[+] 	rel name b'memcpy'
+[+] 	rel name b'system'
+[+] 	rel name b'malloc'
+[+] 	rel name b'sleep'
+[+] 	rel name b'recvfrom'
+[+] 	rel name b'socket'
+[+] 	rel name b'select'
+[+] 	rel name b'readdir'
+[+] 	rel name b'sigaddset'
+[+] 	rel name b'send'
+[+] 	rel name b'abort'
+[+] 	rel name b'chmod'
+[+] 	rel name b'accept'
+[+] 	rel name b'calloc'
+[+] 	rel name b'write'
+[+] 	rel name b'kill'
+[+] 	rel name b'bind'
+[+] 	rel name b'inet_addr'
+[+] 	rel name b'setsockopt'
+[+] 	rel name b'wait'
+[+] 	rel name b'rand'
+[+] 	rel name b'signal'
+[+] 	rel name b'strncmp'
+[+] 	rel name b'sendto'
+[+] 	rel name b'realloc'
+[+] 	rel name b'listen'
+[+] 	rel name b'fork'
+[+] 	rel name b'sscanf'
+[+] 	rel name b'execv'
+[+] 	rel name b'__uClibc_main'
+[+] 	rel name b'fopen'
+[+] 	rel name b'memset'
+[+] 	rel name b'fclose'
+[+] 	rel name b'getppid'
+[+] 	rel name b'time'
+[+] 	rel name b'opendir'
+[+] 	rel name b'strcmp'
+[+] 	rel name b'getsockopt'
+[+] 	rel name b'access'
+[+] 	rel name b'__errno_location'
+[+] 	rel name b'exit'
+[+] 	rel name b'atoi'
+[+] 	rel name b'open'
+[+] 	rel name b'clock'
+[+] 	rel name b'setsid'
+[+] 	rel name b'closedir'
+[+] 	rel name b'fcntl'
+[+] 	rel name b'close'
+[+] 	rel name b'free'
+[+] 	rel name b'sigprocmask'
+[+] 	rel name b'getsockname'
+[INFO] Running in full-deception mode: e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf
+[+] 	Received interrupt: 0x2
+[+] 	0x047bb438: mmap2(addr = 0x0, length = 0x1000, prot = 0x3, flags = 0x4000022, fd = 0xffffffff, pgoffset = 0x0) = 0x90000000
+[+] 	Received interrupt: 0x2
+[FAKE OPEN] '(unreadable @ 0x0)' → fd 3
+[+] 	0x047bbd64: fake_open(addr = 0x7ff3c2d8, pathname_ptr = 0x0, flags = 0x0, mode = 0x0) = 0x3
+[+] 	Received interrupt: 0x2
+[+] 	0x047bbda8: fstat(fd = 0x3, buf_ptr = 0x7ff3c270) = -0x1 (EPERM)
+[+] 	Received interrupt: 0x2
+[+] 	close(3) = -1
+[+] 	0x047bc590: close(fd = 0x3) = -0x1 (EPERM)
+[+] 	Received interrupt: 0x2
+[FAKE OPEN] '(unreadable @ 0x0)' → fd 3
+[+] 	0x047bbd64: fake_open(addr = 0x7ff3c2c0, pathname_ptr = 0x0, flags = 0x0, mode = 0x0) = 0x3
+[+] 	Received interrupt: 0x2
+[+] 	0x047bbda8: fstat(fd = 0x3, buf_ptr = 0x7ff3c258) = -0x1 (EPERM)
+[+] 	Received interrupt: 0x2
+[+] 	close(3) = -1
+[+] 	0x047bc590: close(fd = 0x3) = -0x1 (EPERM)
+[+] 	Received interrupt: 0x2
+[FAKE OPEN] '(unreadable @ 0x0)' → fd 3
+[+] 	0x047bbd64: fake_open(addr = 0x7ff3c2c0, pathname_ptr = 0x0, flags = 0x0, mode = 0x0) = 0x3
+[+] 	Received interrupt: 0x2
+[+] 	0x047bbda8: fstat(fd = 0x3, buf_ptr = 0x7ff3c258) = -0x1 (EPERM)
+[+] 	Received interrupt: 0x2
+[+] 	close(3) = -1
+[+] 	0x047bc590: close(fd = 0x3) = -0x1 (EPERM)
+[+] 	Received interrupt: 0x2
+[FAKE OPEN] '(unreadable @ 0x0)' → fd 3
+[+] 	0x047bbd64: fake_open(addr = 0x7ff3c2c0, pathname_ptr = 0x0, flags = 0x0, mode = 0x0) = 0x3
+[+] 	Received interrupt: 0x2
+[+] 	0x047bbda8: fstat(fd = 0x3, buf_ptr = 0x7ff3c258) = -0x1 (EPERM)
+[+] 	Received interrupt: 0x2
+[+] 	close(3) = -1
+[+] 	0x047bc590: close(fd = 0x3) = -0x1 (EPERM)
+[+] 	Received interrupt: 0x2
+[+] 	0x047baf14: mmap2(addr = 0x0, length = 0x1000, prot = 0x3, flags = 0x22, fd = 0xffffffff, pgoffset = 0x0) = 0x90001000
+[+] 	Received interrupt: 0x2
+[+] 	write() CONTENT: b''
+[+] 	0x047bb084: write(fd = 0x2, buf = 0x90001000, count = 0x0) = 0x0
+[+] 	Received interrupt: 0x2
+[+] 	write() CONTENT: b'e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf'
+e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf[+] 	0x047bb240: write(fd = 0x2, buf = 0x7ff3cfb8, count = 0x44) = 0x44
+[+] 	Received interrupt: 0x2
+[+] 	write() CONTENT: b": can't load library '"
+: can't load library '[+] 	0x047bb084: write(fd = 0x2, buf = 0x90001002, count = 0x16) = 0x16
+[+] 	Received interrupt: 0x2
+[+] 	write() CONTENT: b'libc.so.0'
+libc.so.0[+] 	0x047bb240: write(fd = 0x2, buf = 0x8885, count = 0x9) = 0x9
+[+] 	Received interrupt: 0x2
+[+] 	write() CONTENT: b"'\n"
+'
+[+] 	0x047bb278: write(fd = 0x2, buf = 0x9000101a, count = 0x2) = 0x2
+[+] 	Received interrupt: 0x2
+[+] 	0x047bb2b8: munmap(addr = 0x90001000, length = 0x1000) = 0x0
+[+] 	Received interrupt: 0x2
+[+] 	0x047bd4e8: exit(code = 0x10) = ?
+[+] 	Received interrupt: 0x2
+[+] 	0x047baf14: mmap2(addr = 0x0, length = 0x1000, prot = 0x3, flags = 0x22, fd = 0xffffffff, pgoffset = 0x0) = 0x90001000
+[+] 	Received interrupt: 0x2
+[+] 	write() CONTENT: b''
+[+] 	0x047bb084: write(fd = 0x2, buf = 0x90001000, count = 0x0) = 0x0
+[+] 	Received interrupt: 0x2
+[+] 	write() CONTENT: b'e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf'
+e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf[+] 	0x047bb240: write(fd = 0x2, buf = 0x7ff3cfb8, count = 0x44) = 0x44
+[+] 	Received interrupt: 0x2
+[+] 	write() CONTENT: b": can't resolve symbol '"
+: can't resolve symbol '[+] 	0x047bb084: write(fd = 0x2, buf = 0x90001002, count = 0x18) = 0x18
+[+] 	Received interrupt: 0x2
+[+] 	write() CONTENT: b'__uClibc_main'
+__uClibc_main[+] 	0x047bb240: write(fd = 0x2, buf = 0x89d5, count = 0xd) = 0xd
+[+] 	Received interrupt: 0x2
+[+] 	write() CONTENT: b"'\n"
+'
+[+] 	0x047bb278: write(fd = 0x2, buf = 0x9000101c, count = 0x2) = 0x2
+[+] 	Received interrupt: 0x2
+[+] 	0x047bb2b8: munmap(addr = 0x90001000, length = 0x1000) = 0x0
+[+] 	Received interrupt: 0x2
+[+] 	0x047bba78: exit(code = 0x1) = ?
+[+] 	
+[+] 	syscalls called
+[+] 	------------------------
+[+] 	ql_syscall_mmap2:
+[+] 	  {"params": {"addr": 0, "length": 4096, "prot": 3, "flags": 67108898, "fd": 4294967295, "pgoffset": 0}, "retval": 2415919104, "address": 75215928, "retaddr": null, "position": 0}
+[+] 	  {"params": {"addr": 0, "length": 4096, "prot": 3, "flags": 34, "fd": 4294967295, "pgoffset": 0}, "retval": 2415923200, "address": 75214612, "retaddr": null, "position": 13}
+[+] 	  {"params": {"addr": 0, "length": 4096, "prot": 3, "flags": 34, "fd": 4294967295, "pgoffset": 0}, "retval": 2415923200, "address": 75214612, "retaddr": null, "position": 21}
+[+] 	fake_open:
+[+] 	  {"params": {"addr": 2146681560, "pathname_ptr": 0, "flags": 0, "mode": 0}, "retval": 3, "address": 75218276, "retaddr": null, "position": 1}
+[+] 	  {"params": {"addr": 2146681536, "pathname_ptr": 0, "flags": 0, "mode": 0}, "retval": 3, "address": 75218276, "retaddr": null, "position": 4}
+[+] 	  {"params": {"addr": 2146681536, "pathname_ptr": 0, "flags": 0, "mode": 0}, "retval": 3, "address": 75218276, "retaddr": null, "position": 7}
+[+] 	  {"params": {"addr": 2146681536, "pathname_ptr": 0, "flags": 0, "mode": 0}, "retval": 3, "address": 75218276, "retaddr": null, "position": 10}
+[+] 	ql_syscall_fstat:
+[+] 	  {"params": {"fd": 3, "buf_ptr": 2146681456}, "retval": -1, "address": 75218344, "retaddr": null, "position": 2}
+[+] 	  {"params": {"fd": 3, "buf_ptr": 2146681432}, "retval": -1, "address": 75218344, "retaddr": null, "position": 5}
+[+] 	  {"params": {"fd": 3, "buf_ptr": 2146681432}, "retval": -1, "address": 75218344, "retaddr": null, "position": 8}
+[+] 	  {"params": {"fd": 3, "buf_ptr": 2146681432}, "retval": -1, "address": 75218344, "retaddr": null, "position": 11}
+[+] 	ql_syscall_close:
+[+] 	  {"params": {"fd": 3}, "retval": -1, "address": 75220368, "retaddr": null, "position": 3}
+[+] 	  {"params": {"fd": 3}, "retval": -1, "address": 75220368, "retaddr": null, "position": 6}
+[+] 	  {"params": {"fd": 3}, "retval": -1, "address": 75220368, "retaddr": null, "position": 9}
+[+] 	  {"params": {"fd": 3}, "retval": -1, "address": 75220368, "retaddr": null, "position": 12}
+[+] 	ql_syscall_write:
+[+] 	  {"params": {"fd": 2, "buf": 2415923200, "count": 0}, "retval": 0, "address": 75214980, "retaddr": null, "position": 14}
+[+] 	  {"params": {"fd": 2, "buf": 2146684856, "count": 68}, "retval": 68, "address": 75215424, "retaddr": null, "position": 15}
+[+] 	  {"params": {"fd": 2, "buf": 2415923202, "count": 22}, "retval": 22, "address": 75214980, "retaddr": null, "position": 16}
+[+] 	  {"params": {"fd": 2, "buf": 34949, "count": 9}, "retval": 9, "address": 75215424, "retaddr": null, "position": 17}
+[+] 	  {"params": {"fd": 2, "buf": 2415923226, "count": 2}, "retval": 2, "address": 75215480, "retaddr": null, "position": 18}
+[+] 	  {"params": {"fd": 2, "buf": 2415923200, "count": 0}, "retval": 0, "address": 75214980, "retaddr": null, "position": 22}
+[+] 	  {"params": {"fd": 2, "buf": 2146684856, "count": 68}, "retval": 68, "address": 75215424, "retaddr": null, "position": 23}
+[+] 	  {"params": {"fd": 2, "buf": 2415923202, "count": 24}, "retval": 24, "address": 75214980, "retaddr": null, "position": 24}
+[+] 	  {"params": {"fd": 2, "buf": 35285, "count": 13}, "retval": 13, "address": 75215424, "retaddr": null, "position": 25}
+[+] 	  {"params": {"fd": 2, "buf": 2415923228, "count": 2}, "retval": 2, "address": 75215480, "retaddr": null, "position": 26}
+[+] 	ql_syscall_munmap:
+[+] 	  {"params": {"addr": 2415923200, "length": 4096}, "retval": 0, "address": 75215544, "retaddr": null, "position": 19}
+[+] 	  {"params": {"addr": 2415923200, "length": 4096}, "retval": 0, "address": 75215544, "retaddr": null, "position": 27}
+[+] 	ql_syscall_exit:
+[+] 	  {"params": {"code": 16}, "retval": null, "address": 75224296, "retaddr": null, "position": 20}
+[+] 	  {"params": {"code": 1}, "retval": null, "address": 75217528, "retaddr": null, "position": 28}
+[+] 	
+[+] 	strings ocurrences
+[+] 	------------------------

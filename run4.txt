@@ -1,0 +1,308 @@
+sg@sg:~/Desktop/Dyn_An$ python3 run_malware_qiling.py
+[+]     Profile: default
+[+]     Set kernel trap: memory_barrier at 0xffff0fa0
+[+]     Set kernel trap: cmpxchg at 0xffff0fc0
+[+]     Set kernel trap: get_tls at 0xffff0fe0
+[+]     Mapped 0x8000-0x14000
+[+]     Mapped 0x1c000-0x1d000
+[+]     mem_start : 0x8000
+[+]     mem_end   : 0x1d000
+[+]     Interpreter path: /lib/ld-uClibc.so.0
+[+]     Interpreter addr: 0x47ba000
+[+]     Mapped 0x47ba000-0x47bf000
+[+]     Mapped 0x47c6000-0x47c8000
+[+]     mmap_address is : 0x90000000
+[+]     rel name b'ioctl'
+[+]     rel name b'recv'
+[+]     rel name b'connect'
+[+]     rel name b'sigemptyset'
+[+]     rel name b'memmove'
+[+]     rel name b'snprintf'
+[+]     rel name b'usleep'
+[+]     rel name b'getpid'
+[+]     rel name b'fgets'
+[+]     rel name b'memcpy'
+[+]     rel name b'system'
+[+]     rel name b'malloc'
+[+]     rel name b'sleep'
+[+]     rel name b'recvfrom'
+[+]     rel name b'socket'
+[+]     rel name b'select'
+[+]     rel name b'readdir'
+[+]     rel name b'sigaddset'
+[+]     rel name b'send'
+[+]     rel name b'abort'
+[+]     rel name b'chmod'
+[+]     rel name b'accept'
+[+]     rel name b'calloc'
+[+]     rel name b'write'
+[+]     rel name b'kill'
+[+]     rel name b'bind'
+[+]     rel name b'inet_addr'
+[+]     rel name b'setsockopt'
+[+]     rel name b'wait'
+[+]     rel name b'rand'
+[+]     rel name b'signal'
+[+]     rel name b'strncmp'
+[+]     rel name b'sendto'
+[+]     rel name b'realloc'
+[+]     rel name b'listen'
+[+]     rel name b'fork'
+[+]     rel name b'sscanf'
+[+]     rel name b'execv'
+[+]     rel name b'__uClibc_main'
+[+]     rel name b'fopen'
+[+]     rel name b'memset'
+[+]     rel name b'fclose'
+[+]     rel name b'getppid'
+[+]     rel name b'time'
+[+]     rel name b'opendir'
+[+]     rel name b'strcmp'
+[+]     rel name b'getsockopt'
+[+]     rel name b'access'
+[+]     rel name b'__errno_location'
+[+]     rel name b'exit'
+[+]     rel name b'atoi'
+[+]     rel name b'open'
+[+]     rel name b'clock'
+[+]     rel name b'setsid'
+[+]     rel name b'closedir'
+[+]     rel name b'fcntl'
+[+]     rel name b'close'
+[+]     rel name b'free'
+[+]     rel name b'sigprocmask'
+[+]     rel name b'getsockname'
+[INFO] Starting emulation of e2d97525cffd1220bc5427f25dcc24137a0bcc6fd9a54e60fe94b15eba32eaad.elf
+[+]     Received interrupt: 0x2
+[+]     0x047bb438: mmap2(addr = 0x0, length = 0x1000, prot = 0x3, flags = 0x4000022, fd = 0xffffffff, pgoffset = 0x0) = 0x90000000
+[+]     Received interrupt: 0x2
+[+]     open("/lib/libc.so.0", 0x0, 00) = 3
+[+]     0x047bbd64: open(filename = 0x7ff3c2d8, flags = 0x0, mode = 0x0) = 0x3
+[+]     Received interrupt: 0x2
+[+]     0x047bbda8: fstat(fd = 0x3, buf_ptr = 0x7ff3c270) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x047bbe78: mmap2(addr = 0x0, length = 0x1000, prot = 0x3, flags = 0x4000022, fd = 0xffffffff, pgoffset = 0x0) = 0x90001000
+[+]     Received interrupt: 0x2
+[+]     read() CONTENT: b'\x7fELF\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00(\x00\x01\x00\x00\x00\x90I\x01\x004\x00\x00\x00\xa8f\x06\x00\x02\x00\x00\x054\x00 \x00\x08\x00(\x00\x1a\x00\x19\x00\x01\x00\x00p\x88N\x06\x00\x88N\x06\x00\x88N\x06\x008\x00\x00\x008\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x06\x00\x00\x004\x00\x00\x004\x00\x00\x004\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x05\x00\x00\x00\x04\x00\x00\x00\x03\x00\x00\x00\\N\x06\x00\\N\x06\x00\\N\x06\x00\x14\x00\x00\x00\x14\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xc0N\x06\x00\xc0N\x06\x00\x05\x00\x00\x00\x00\x80\x00\x00\x01\x00\x00\x00\xa4Q\x06\x00\xa4\xd1\x06\x00\xa4\xd1\x06\x00\xd0\x11\x00\x00,d\x00\x00\x06\x00\x00\x00\x00\x80\x00\x00\x02\x00\x00\x00@T\x06\x00@\xd4\x06\x00@\xd4\x06\x00\xb8\x00\x00\x00\xb8\x00\x00\x00\x06\x00\x00\x00\x04\x00\x00\x00Q\xe5td\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x04\x00\x00\x00R\xe5td\xa4Q\x06\x00\xa4\xd1\x06\x00\xa4\xd1\x06\x00\\\x0e\x00\x00\\\x0e\x00\x00\x04\x00\x00\x00\x01\x00\x00\x00\x05\x08\x00\x009\x08\x00\x00\xf6\x03\x00\x00\xeb\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xf8\x03\x00\x00T\x04\x00\x00\x00\x00\x00\x00\x1a\x07\x00\x00\x00\x00\x00\x00&\x05\x00\x00\xc0\x06\x00\x00\x87\x00\x00\x00\xdb\x04\x00\x00\xb5\x07\x00\x00\xcd\x07\x00\x00\x00\x00\x00\x00\x0f\x03\x00\x00\xde\x00\x00\x00L\x03\x00\x00\\\x04\x00\x006\x04\x00\x00\x91\x06\x00\x00\x00\x00\x00\x00\x84\x06\x00\x00\xe7\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x8f\x01\x00\x00\x82\x06\x00\x00\x00\x00\x00\x00\xd1\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00T\x07\x00\x00a\x05\x00\x00\xaf\x06\x00\x00\x00\x00\x00\x00[\x03\x00\x00\xcf\x04\x00\x00\xcd\x04\x00\x00\x00\x00\x00\x00\x86\x01\x00\x00\x8d\x04\x00\x00\xc3\x03\x00\x00\r\x08\x00\x00V\x04\x00\x00\x00\x00\x00\x00\x88\x06\x00\x00\xec\x07\x00\x00\x19\x07\x00\x00|\x04\x00\x00R\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xb7\x06\x00\x00\x00\x00\x00\x00(\x00\x00\x00\xe6\x03\x00\x00\x91\x07\x00\x00\x00\x00\x00\x00\xae\x02\x00\x00 \x03\x00\x00\x00\x00\x00\x00\x13\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xda\x02\x00\x00\xaa\x00\x00\x00=\x02\x00\x00\x97\x05\x00\x00\x00\x00\x00\x00N\x04\x00\x00\x00\x00\x00\x00\x1d\x07\x00\x00\x1a\x06\x00\x00\xcb\x06\x00\x00\x08\x05\x00\x00\x03\x05\x00\x00\x00\x00\x00\x00.\x07\x00\x00\xe9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa7\x02\x00\x00r\x05\x00\x00\x00\x00\x00\x00u\x06\x00\x00\x00\x00\x00\x00v\x01\x00\x00\xb5\x06\x00\x00\x00\x00\x00\x00\x7f\x04\x00\x00\xf3\x01\x00\x00^\x06\x00\x00\xd7\x00\x00\x00\x00\x00\x00\x00\x87\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00P\x06\x00\x00\x85\x01\x00\x00\x00\x00\x00\x00#\x05\x00\x00\xa5\x05\x00\x00,\x08\x00\x00\x1a\x01\x00\x00\xfa\x05\x00\x00*\x01\x00\x00\xe8\x06\x00\x00\xa3\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xb7\x05\x00\x00\x04\x05\x00\x00\x05\x07\x00\x00\xa9\x07\x00\x00k\x00\x00\x004\x00\x00\x00\xd4\x05\x00\x00}\x04\x00\x00\x8d\x02\x00\x00\xbb\x07\x00\x00!\x08\x00\x00@\x06\x00\x00\xdd\x03\x00\x00\xc4\x01\x00\x00<\x01\x00\x00~\x00\x00\x00B\x03\x00\x00\x00\x00\x00\x00s\x06\x00\x00\x00\x00\x00\x00\xea\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xaf\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[\x07\x00\x00\x00\x00\x00\x00\x18\x02\x00\x00\x00\x00\x00\x00r\x07\x00\x00\xb6\x04\x00\x00\x02\x07\x00\x00\xd2\x07\x00\x00\x8d\x05\x00\x00\x00\x00\x00\x00\x17\x02\x00\x00L\x07\x00\x00\x00\x00\x00\x00C\x06\x00\x00?\x05\x00\x00q\x03\x00\x00\x00\x00\x00\x00\x0b\x02\x00\x00\xb7\x02\x00\x00\x00\x00\x00\x00c\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x8d\x06\x00\x00\x85\x03\x00\x00\x9c\x03\x00\x00T\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xcf\x06\x00\x00\x0c\x06\x00\x00{\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x92\x04\x00\x00\xd3\x06\x00\x00\xbb\x06\x00\x00\x96\x06\x00\x00/\x06\x00\x00f\x06\x00\x00b\x00\x00\x00\x8e\x03\x00\x003\x06\x00\x00\xbd\x06\x00\x00\xfa\x04\x00\x00L\x06\x00\x00\x0e\x01\x00\x00S\x02\x00\x00p\x03
+[+]     0x047bbef8: read(fd = 0x3, buf = 0x90001000, length = 0x1000) = 0x1000
+[+]     Received interrupt: 0x2
+[+]     0x047bc150: mmap2(addr = 0x0, length = 0x74000, prot = 0x0, flags = 0x22, fd = 0xffffffff, pgoffset = 0x0) = 0x90002000
+[+]     Received interrupt: 0x2
+[+]     mmap2: unmapping memory between 0x90002000-0x90067000 to make room for fixed mapping
+[+]     0x047bc4a4: mmap2(addr = 0x90002000, length = 0x64ec0, prot = 0x5, flags = 0x12, fd = 0x3, pgoffset = 0x0) = 0x90002000
+[+]     Received interrupt: 0x2
+[+]     mmap2: unmapping memory between 0x9006f000-0x90071000 to make room for fixed mapping
+[+]     0x047bc324: mmap2(addr = 0x9006f000, length = 0x1374, prot = 0x3, flags = 0x12, fd = 0x3, pgoffset = 0x65) = 0x9006f000
+[+]     Received interrupt: 0x2
+[+]     mmap2: unmapping memory between 0x90071000-0x90076000 to make room for fixed mapping
+[+]     0x047bc404: mmap2(addr = 0x90071000, length = 0x45d0, prot = 0x3, flags = 0x32, fd = 0xffffffff, pgoffset = 0x0) = 0x90071000
+[+]     Received interrupt: 0x2
+[+]     close(3) = 0
+[+]     0x047bc680: close(fd = 0x3) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x047bc7c0: munmap(addr = 0x90001000, length = 0x1000) = 0x0
+[+]     Received interrupt: 0x2
+[+]     stat("/lib/ld-uClibc.so.0", 0x7ff3cc90) write completed
+[+]     0x047bd6ac: stat(path = 0x90000390, buf_ptr = 0x7ff3cc90) = 0x0
+[+]     Received interrupt: 0x2
+[+]     open("/dev/urandom", 0x0, 00) = -1
+[+]     0x047bd824: open(filename = 0x47be1c7, flags = 0x0, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     0x047bd8b4: gettimeofday(tv = 0x7ff3ccd0, tz = 0x0) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x047bb348: mprotect(start = 0x9006f000, mlen = 0x1000, prot = 0x1) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x047bb348: mprotect(start = 0x47c6000, mlen = 0x1000, prot = 0x1) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x90018308: ioctl(fd = 0x0, cmd = 0x5401, arg = 0x7ff3cab4) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x90018308: ioctl(fd = 0x1, cmd = 0x5401, arg = 0x7ff3cab4) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x900199d8: rt_sigprocmask(how = 0x0, nset = 0x7ff3cca8, oset = 0x0, sigsetsize = 0x8) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x90019d68: rt_sigaction(signum = 0x11, act = 0x7ff3c7c0, oldact = 0x7ff3c7e4) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x90019d68: rt_sigaction(signum = 0x5, act = 0x7ff3c7c0, oldact = 0x7ff3c7e4) = 0x0
+[+]     Received interrupt: 0x2
+[+]     Converted emulated socket type 2 to host socket type 2
+[+]     socket(AF_INET, SOCK_DGRAM, 0) = 3
+[+]     0x90053fb4: socket(domain = 0x2, socktype = 0x2, protocol = 0x0) = 0x3
+[+]     Received interrupt: 0x2
+[+]     Connecting to 8.8.8.8:53
+[+]     0x90053d2c: connect(sockfd = 0x3, addr = 0x7ff3c7f4, addrlen = 0x10) = 0x0
+[+]     Received interrupt: 0x2
+[+]     getsockname(3, 0x7ff3c7f4, 0x7ff3c804) = 0
+[+]     0x90053d8c: getsockname(sockfd = 0x3, addr = 0x7ff3c7f4, addrlenptr = 0x7ff3c804) = 0x0
+[+]     Received interrupt: 0x2
+[+]     close(3) = 0
+[+]     0x90017670: close(fd = 0x3) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x90016ae0: brk(inp = 0x0) = 0x1f000
+[+]     Received interrupt: 0x2
+[+]     brk: increasing program break from 0x1f000 to 0x20000
+[+]     0x90016ae0: brk(inp = 0x20000) = 0x20000
+[+]     Received interrupt: 0x2
+[+]     Converted emulated socket type 1 to host socket type 1
+[+]     socket(AF_INET, SOCK_STREAM, 0) = 3
+[+]     0x90053fb4: socket(domain = 0x2, socktype = 0x1, protocol = 0x0) = 0x3
+[+]     Received interrupt: 0x2
+[+]     Converted emulated socket level 1 to host socket level 1
+[+]     Converted emulated socket option 2 to host socket option 2
+[+]     0x90053f54: setsockopt(sockfd = 0x3, level = 0x1, optname = 0x2, optval_addr = 0x7ff3cdec, optlen = 0x4) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x90019d30: fcntl(fd = 0x3, cmd = 0x3, arg = 0x0) = 0x2
+[+]     Received interrupt: 0x2
+[+]     0x90019d30: fcntl(fd = 0x3, cmd = 0x4, arg = 0x802) = 0x0
+[+]     Received interrupt: 0x2
+[+]     Binding socket to 127.0.0.1:12121
+[x]     Syscall ERROR: ql_syscall_bind DEBUG: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/sg/.local/lib/python3.13/site-packages/qiling/os/posix/posix.py", line 374, in load_syscall
+    retval = syscall_hook(self.ql, *params)
+  File "/home/sg/.local/lib/python3.13/site-packages/qiling/os/posix/syscall/socket.py", line 433, in ql_syscall_bind
+    sock.bind(dest)
+    ~~~~~~~~~^^^^^^
+  File "/home/sg/.local/lib/python3.13/site-packages/qiling/os/posix/filestruct.py", line 83, in bind
+    return self.__socket.bind(address)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+OSError: [Errno 98] Address already in use
+[CRASH] Emulation stopped due to error: [Errno 98] Address already in use
+sg@sg:~/Desktop/Dyn_An$ [+]     0x90018890: nanosleep(req = 0x7ff3c7fc, rem = 0x7ff3c7fc) = 0x0
+[+]     Received interrupt: 0x2
+[+]     open("/dev/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f248, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/misc/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f260, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/sbin/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f278, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/bin/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f290, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/FTWDT101_watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f2a8, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/FTWDT101/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f2c8, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/watchdog0", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f2e8, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/etc/default/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f300, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/etc/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f320, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     0x90019d68: rt_sigaction(signum = 0x11, act = 0x0, oldact = 0x7ff3c7e0) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x900199d8: rt_sigprocmask(how = 0x0, nset = 0x7ff3c7f4, oset = 0x7ff3c7f4, sigsetsize = 0x8) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x90018890: nanosleep(req = 0x7ff3c7fc, rem = 0x7ff3c7fc) = 0x0
+[+]     Received interrupt: 0x2
+[+]     open("/dev/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f248, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/misc/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f260, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/sbin/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f278, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/bin/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f290, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/FTWDT101_watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f2a8, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/FTWDT101/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f2c8, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/watchdog0", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f2e8, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/etc/default/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f300, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/etc/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f320, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     0x90019d68: rt_sigaction(signum = 0x11, act = 0x0, oldact = 0x7ff3c7e0) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x900199d8: rt_sigprocmask(how = 0x0, nset = 0x7ff3c7f4, oset = 0x7ff3c7f4, sigsetsize = 0x8) = 0x0
+[+]     Received interrupt: 0x2
+^C
+sg@sg:~/Desktop/Dyn_An$ ^C
+sg@sg:~/Desktop/Dyn_An$ ^C
+sg@sg:~/Desktop/Dyn_An$ [+]     
+
+0x90018890: nanosleep(req = 0x7ff3c7fc, rem = 0x7ff3c7fc) = 0x0
+[+]     Received interrupt: 0x2
+[+]     open("/dev/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f248, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/misc/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f260, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/sbin/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f278, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/bin/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f290, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/FTWDT101_watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f2a8, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/FTWDT101/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f2c8, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/watchdog0", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f2e8, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/etc/default/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f300, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/etc/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f320, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     0x90019d68: rt_sigaction(signum = 0x11, act = 0x0, oldact = 0x7ff3c7e0) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x900199d8: rt_sigprocmask(how = 0x0, nset = 0x7ff3c7f4, oset = 0x7ff3c7f4, sigsetsize = 0x8) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x90018890: nanosleep(req = 0x7ff3c7fc, rem = 0x7ff3c7fc) = 0x0
+[+]     Received interrupt: 0x2
+[+]     open("/dev/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f248, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/misc/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f260, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/sbin/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f278, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/bin/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f290, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/FTWDT101_watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f2a8, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/FTWDT101/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f2c8, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/dev/watchdog0", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f2e8, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/etc/default/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f300, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     open("/etc/watchdog", 0x2, 00) = -1
+[+]     0x90018954: open(filename = 0x1f320, flags = 0x2, mode = 0x0) = -0x1 (EPERM)
+[+]     Received interrupt: 0x2
+[+]     0x90019d68: rt_sigaction(signum = 0x11, act = 0x0, oldact = 0x7ff3c7e0) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x900199d8: rt_sigprocmask(how = 0x0, nset = 0x7ff3c7f4, oset = 0x7ff3c7f4, sigsetsize = 0x8) = 0x0
+[+]     Received interrupt: 0x2
+[+]     0x90018890: nanosleep(req = 0x7ff3c7fc, rem = 0x7ff3c7fc) = 0x0
+
